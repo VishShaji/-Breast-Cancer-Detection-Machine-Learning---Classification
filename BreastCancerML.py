@@ -7,7 +7,7 @@
 get_ipython().system('pip3 install -U ucimlrepo')
 
 
-# In[55]:
+# In[114]:
 
 
 #Importing Libraries
@@ -24,7 +24,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 
 
-# In[20]:
+# In[115]:
 
 
 from ucimlrepo import fetch_ucirepo 
@@ -43,35 +43,35 @@ print(breast_cancer_wisconsin_diagnostic.metadata)
 print(breast_cancer_wisconsin_diagnostic.variables) 
 
 
-# In[23]:
+# In[116]:
 
 
 #Training Data - Features
 X
 
 
-# In[105]:
+# In[117]:
 
 
 #Checking Empty Values
 X.info()
 
 
-# In[24]:
+# In[118]:
 
 
 #Training Data - Target Label
 y
 
 
-# In[106]:
+# In[119]:
 
 
 #Checking Empty Values
 y.info()
 
 
-# In[81]:
+# In[120]:
 
 
 #Scaling the training data
@@ -79,7 +79,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 
-# In[82]:
+# In[121]:
 
 
 #80-20 Train-Test Split
@@ -89,7 +89,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, 
 y_train = y_train.iloc[:, 0]
 
 
-# In[83]:
+# In[122]:
 
 
 #Empty list for storing Model Accuracy and Name
@@ -97,7 +97,7 @@ result=[]
 models=[]
 
 
-# In[84]:
+# In[123]:
 
 
 #Creating a Logistic Regression Model
@@ -106,7 +106,7 @@ model.fit(X_train, y_train)
 models.append(model.__class__.__name__)
 
 
-# In[85]:
+# In[124]:
 
 
 #Prediction of Logistics Regression
@@ -118,7 +118,7 @@ result.append(accuracy)
 print("Accuracy with Logistics Regression:", accuracy)
 
 
-# In[86]:
+# In[125]:
 
 
 #Creating a Random Forest Classifier
@@ -128,7 +128,7 @@ model.fit(X_train, y_train)
 models.append(model.__class__.__name__)
 
 
-# In[87]:
+# In[126]:
 
 
 #Prediction of Random Forest Classifier
@@ -140,7 +140,7 @@ result.append(accuracy)
 print("Accuracy with Random Forest:", accuracy)
 
 
-# In[88]:
+# In[127]:
 
 
 #Creating a KNN Classifier
@@ -150,7 +150,7 @@ model.fit(X_train, y_train)
 models.append(model.__class__.__name__)
 
 
-# In[89]:
+# In[128]:
 
 
 #Prediction of KNN Classifier
@@ -162,7 +162,7 @@ result.append(accuracy)
 print("Accuracy with KNN (k=5):", accuracy)
 
 
-# In[90]:
+# In[129]:
 
 
 #Creating a Support Vector Machine Model with Linear Kernel
@@ -172,7 +172,7 @@ model.fit(X_train, y_train)
 models.append(model.__class__.__name__+' Linear Kernel')
 
 
-# In[91]:
+# In[130]:
 
 
 #Prediction of Support Vector Machine Model with Linear Kernel
@@ -184,7 +184,7 @@ result.append(accuracy)
 print("Accuracy with SVM (Linear kernel):", accuracy)
 
 
-# In[92]:
+# In[131]:
 
 
 #Creating a Support Vector Machine Model with RBF Kernel
@@ -194,7 +194,7 @@ model.fit(X_train, y_train)
 models.append(model.__class__.__name__+' RBF Kernel')
 
 
-# In[93]:
+# In[132]:
 
 
 #Prediction of Support Vector Machine Model with RBF Kernel
@@ -206,7 +206,7 @@ result.append(accuracy)
 print("Accuracy with SVM (RBF kernel):", accuracy)
 
 
-# In[107]:
+# In[133]:
 
 
 #Plotting Accuracy of each model
@@ -220,7 +220,7 @@ plt.title('Accuracy of model')
 plt.show()
 
 
-# In[102]:
+# In[134]:
 
 
 #Obtaining the data set as csv file for storage
@@ -229,14 +229,17 @@ df = pd.concat([X, y])
 df.to_csv("BreastCancerData.csv")
 
 
-# In[103]:
+# In[135]:
 
 
 df
 
 
-# In[ ]:
+# In[136]:
 
 
-
+score = max(result)
+index = result.index(score)
+best_model = models[index]
+print("The best model for identifying whether the Tumour is Malignant or begign is", best_model,"with an accuracy of ",score*100, "%")
 
