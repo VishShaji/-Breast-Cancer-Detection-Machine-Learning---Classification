@@ -1,6 +1,6 @@
-# Breast Cancer Detection | Data Cleaning and Analysis
+# Breast Cancer Tumour Classification | Data Cleaning and Analysis
 
-This project focuses on the detection of breast cancer using machine learning algorithms. The data utilized for this analysis is sourced from the UCI Machine Learning Repository.
+This project focuses on the classification of breast cancer tumours into Malignant and Benign using machine learning algorithms. The data utilized for this analysis is sourced from the UCI Machine Learning Repository.
 
 ## Authors
 
@@ -37,11 +37,16 @@ The project can be accessed via Jupyter Notebook. Simply open the provided `.ipy
 
 The dataset consists of various features derived from diagnostic tests, including radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension.
 
-Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.  They describe characteristics of the cell nuclei present in the image. A few of the images can be found at this [link](http://www.cs.wisc.edu/~street/images/)
+Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.  They describe the characteristics of the cell nuclei present in the image. A few of the images can be found at this [link](http://www.cs.wisc.edu/~street/images/)
 
 ## Screenshots
 
 ![App Screenshot](https://github.com/VishShaji/Breast-Cancer-Detections-Machine-Learning-Classification/blob/main/Assets/ModelEvaluation.png)
+
+## Result
+
+Achieved the highest accuracy of 97.37% in classifying Malignant and Benign Tumours with Logistic Regression.
+
 
 ## License
 
