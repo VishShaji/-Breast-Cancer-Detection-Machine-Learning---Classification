@@ -5,7 +5,7 @@ This project focuses on the detection of breast cancer using machine learning al
 ## Authors
 
 - [@VishalShaji](https://www.github.com/VishShaji)
-- 
+
 ## Tech Stack
 
 - Python
