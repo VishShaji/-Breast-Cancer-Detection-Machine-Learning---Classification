@@ -1,4 +1,4 @@
-# Breast Cancer Tumour Classification | Data Cleaning and Analysis
+# Breast Cancer Tumour Classification | Machine Learning
 
 This project focuses on the classification of breast cancer tumours into Malignant and Benign using machine learning algorithms. The data utilized for this analysis is sourced from the UCI Machine Learning Repository.
 
