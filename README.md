@@ -1,10 +1,6 @@
-# Breast Cancer Tumour Classification | Machine Learning
+# Problem Statement
 
-This project focuses on the classification of breast cancer tumours into Malignant and Benign using machine learning algorithms. The data utilized for this analysis is sourced from the UCI Machine Learning Repository.
-
-## Authors
-
-- [@VishalShaji](https://www.github.com/VishShaji)
+The objective of this project is to develop a predictive model that accurately classifies breast tumor diagnoses as either benign or malignant based on various features extracted from diagnostic images and patient data. The project aims to identify the best machine learning model and its optimal parameters to achieve high prediction accuracy.
 
 ## Tech Stack
 
@@ -15,20 +11,6 @@ This project focuses on the classification of breast cancer tumours into Maligna
 - scikit-learn
 - matplotlib
 
-## 🛠 Skills
-
-- Machine Learning
-- Data Visualization
-- Model Evaluation
-
-## Description
-
-The project revolves around building machine learning models to detect breast cancer based on certain features derived from diagnostic tests. After cleaning and preprocessing the dataset, various machine learning algorithms such as Logistic Regression, Random Forest Classifier, K-Nearest Neighbors (KNN), and Support Vector Machines (SVM) are employed for classification. The accuracy of each model is evaluated and visualized to provide insights into their performance.
-
-## Usage
-
-The project can be accessed via Jupyter Notebook. Simply open the provided `.ipynb` file in Jupyter Notebook to view the code, execute the cells, and interact with the analysis.
-
 ## Data Source
 
 - [Breast Cancer Wisconsin (Diagnostic) Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic))
@@ -38,6 +20,22 @@ The project can be accessed via Jupyter Notebook. Simply open the provided `.ipy
 The dataset consists of various features derived from diagnostic tests, including radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension.
 
 Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.  They describe the characteristics of the cell nuclei present in the image. A few of the images can be found at this [link](http://www.cs.wisc.edu/~street/images/)
+
+# Approach
+
+1. Data Collection and Preprocessing:
+- Obtain a dataset containing diagnostic features such as tumor size, shape, texture, and patient characteristics.
+- Preprocess the data by handling missing values, encoding categorical variables, and scaling numerical features as necessary.
+2. Model Selection and Optimization:
+- Explore a variety of machine learning models suitable for binary classification tasks, such as Logistic Regression, Random Forest, Support Vector Machines, etc.
+- Utilize techniques like cross-validation and grid search to identify the best-performing model and tune its hyperparameters for optimal performance.
+3. Evaluation Metrics:
+- Evaluate model performance using appropriate evaluation metrics such as accuracy, precision, recall, and F1-score.
+- Select the model with the highest overall performance as the best model for the task.
+4. Deployment with Streamlit:
+- Develop a user-friendly web application using Streamlit framework to showcase the predictive capabilities of the best model.
+- Integrate the trained model into the web app to provide real-time predictions and probabilities of tumor diagnoses being benign or malignant.
+- Display additional insights and visualizations to aid interpretation of the model predictions.
 
 ## Screenshots
 
