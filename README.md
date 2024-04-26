@@ -23,16 +23,16 @@ Features are computed from a digitized image of a fine needle aspirate (FNA) of 
 
 # Approach
 
-1. Data Collection and Preprocessing:
+## 1. Data Collection and Preprocessing:
 - Obtain a dataset containing diagnostic features such as tumor size, shape, texture, and patient characteristics.
 - Preprocess the data by handling missing values, encoding categorical variables, and scaling numerical features as necessary.
-2. Model Selection and Optimization:
+## 2. Model Selection and Optimization:
 - Explore a variety of machine learning models suitable for binary classification tasks, such as Logistic Regression, Random Forest, Support Vector Machines, etc.
 - Utilize techniques like cross-validation and grid search to identify the best-performing model and tune its hyperparameters for optimal performance.
-3. Evaluation Metrics:
+## 3. Evaluation Metrics:
 - Evaluate model performance using appropriate evaluation metrics such as accuracy, precision, recall, and F1-score.
 - Select the model with the highest overall performance as the best model for the task.
-4. Deployment with Streamlit:
+## 4. Deployment with Streamlit:
 - Develop a user-friendly web application using Streamlit framework to showcase the predictive capabilities of the best model.
 - Integrate the trained model into the web app to provide real-time predictions and probabilities of tumor diagnoses being benign or malignant.
 - Display additional insights and visualizations to aid interpretation of the model predictions.
