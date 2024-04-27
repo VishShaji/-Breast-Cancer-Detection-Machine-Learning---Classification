@@ -7,9 +7,11 @@ The objective of this project is to develop a predictive model that accurately c
 - Python
 - Jupyter Notebook
 - pandas
-- NumPy
-- scikit-learn
+- numpy
+- Streamlit
+- Scikit-learn
 - matplotlib
+- plotly
 
 ## Data Source
 
@@ -41,10 +43,22 @@ Features are computed from a digitized image of a fine needle aspirate (FNA) of 
 
 ![App Screenshot](https://github.com/VishShaji/Breast-Cancer-Detections-Machine-Learning-Classification/blob/main/Assets/ModelEvaluation.png)
 
+## Model Selection
+
+The implementation of hyperparameter-tuning with GridSearchCv gave us the following results by optimizing for recall score.
+
+![Model Evaluation](https://github.com/VishShaji/Breast-Cancer-Tumour-Classification-Machine-Learning/blob/main/Assets/Model_Evaluation.png)
+
+From the result above we are to prioritize recall score to chose the best model in our context of Breast Cancer detection.
+
+![Recall](https://github.com/VishShaji/Breast-Cancer-Tumour-Classification-Machine-Learning/blob/main/Assets/Recall.png)
+
 ## Result
 
-Achieved the highest accuracy of 97.37% in classifying Malignant and Benign Tumours with Logistic Regression.
+The Chosen Logistic Regression model achieves a Recall score(Sensitivity) of 97.7% and an Accuracy of 97.4% in classifying the cancer cell into Benign or Malignant.
+The web application is created using streamlit
 
+![Streamlit](https://github.com/VishShaji/Breast-Cancer-Tumour-Classification-Machine-Learning/blob/main/Assets/Streamlit_Page.png)
 
 ## License
 
