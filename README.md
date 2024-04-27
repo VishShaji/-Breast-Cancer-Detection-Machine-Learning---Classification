@@ -38,11 +38,7 @@ Features are computed from a digitized image of a fine needle aspirate (FNA) of 
 - Develop a user-friendly web application using Streamlit framework to showcase the predictive capabilities of the best model.
 - Integrate the trained model into the web app to provide real-time predictions and probabilities of tumor diagnoses being benign or malignant.
 - Display additional insights and visualizations to aid interpretation of the model predictions.
-
-## Screenshots
-
-![App Screenshot](https://github.com/VishShaji/Breast-Cancer-Detections-Machine-Learning-Classification/blob/main/Assets/ModelEvaluation.png)
-
+- 
 ## Model Selection
 
 The implementation of hyperparameter-tuning with GridSearchCv gave us the following results by optimizing for recall score.
